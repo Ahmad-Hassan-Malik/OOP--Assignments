@@ -1,16 +1,23 @@
-public class Circle {
+public class Circle{
 
-	public double radius = 1.5;
+	private double radius;
 
+	Point centerPoint;
 
-	public double calArea(){
-		return radius * radius *3.14;
-}
+		public void setPoint(Point p){
+			centerPoint = p;
+		}
 
-	public double calCircumfarence(){
-		return radius1 * 3.14 *2;
-}
+		public Point getPoint(){
+			return centerPoint;
+		}
+	
+		public void setRadius(double radius){
+			this.radius = radius;
+		}
 
-	public static void main(String[] args) {
-}
+		public double getRadius(){
+			return radius;
+		}
+
 }
